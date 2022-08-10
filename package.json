@@ -9,7 +9,9 @@
     "test:api": "playwright test --config=api.config.ts",
     "test:api:open": "npm run test:api -- --headed",
     "test:visual": "playwright test --config=visual.config.ts",
-    "test:visual:open": "npm run test:visual -- --headed"
+    "test:visual:open": "npm run test:visual -- --headed",
+    "test:extra": "playwright test --config=extra.config.ts",
+    "test:extra:open": "npm run test:extra -- --headed"
   },
   "repository": {
     "type": "git",
