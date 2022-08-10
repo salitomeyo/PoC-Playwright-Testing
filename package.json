@@ -1,0 +1,27 @@
+{
+  "name": "poc-playwright-testing",
+  "version": "1.0.0",
+  "description": "Proof of concept using playwright testing capabilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salitomeyo/PoC-Playwright-Testing.git"
+  },
+  "keywords": [
+    "Playwright",
+    "Testing"
+  ],
+  "author": "Salome Aristizabal Giraldo (salitomeyo16@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salitomeyo/PoC-Playwright-Testing/issues"
+  },
+  "homepage": "https://github.com/salitomeyo/PoC-Playwright-Testing#readme",
+  "dependencies": {
+    "@playwright/test": "^1.24.2",
+    "prettier": "^2.7.1"
+  }
+}
