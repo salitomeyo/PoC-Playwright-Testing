@@ -1,4 +1,4 @@
-name: Playwright CI
+name: E2E Test Report
 
 on:
   pull_request
@@ -15,11 +15,11 @@ jobs:
         run: npm ci
       - name: Install Playwright
         run: npx playwright install --with-deps
-      - name: Run E2E tests
+      - name: Run E2E tests -- --reporter=html
         run: npm run test:e2e
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
-          name: e2e-test
-          path: playwright-reports/e2e-test.html
+          name: playwright-e2e-report
+          path: playwright-report

@@ -1,4 +1,4 @@
-name: Playwright CI
+name: Extra Test Report
 
 on:
   pull_request
@@ -16,10 +16,10 @@ jobs:
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run Extra tests
-        run: npm run test:extra
+        run: npm run test:extra -- --reporter=html
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
-          name: extra-test
-          path: playwright-reports/extra-test.html
+          name: playwright-extra-report
+          path: playwright-report

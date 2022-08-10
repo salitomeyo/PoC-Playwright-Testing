@@ -1,4 +1,4 @@
-name: Playwright CI
+name: Visual Test Report
 
 on:
   pull_request
