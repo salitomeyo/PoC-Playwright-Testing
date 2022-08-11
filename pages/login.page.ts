@@ -14,8 +14,8 @@ export class LoginPage {
     }
 
     async fillLoginForm(email: string, password: string) {
-        await this.emailInput.type(email)
-        await this.passwordInput.type(password)
+        await this.emailInput.fill(email)
+        await this.passwordInput.fill(password)
         await this.submitBtn.click()
     }
 }
