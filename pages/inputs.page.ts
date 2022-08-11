@@ -26,7 +26,7 @@ export class InputsPage {
     }
 
     async writeMessage(message: string) {
-        await this.messageInput.type(message)
+        await this.messageInput.fill(message)
     }
 
     async selectOption(option: string) {

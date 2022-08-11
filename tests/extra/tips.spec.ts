@@ -20,7 +20,7 @@ test.describe.only("some more tricks from Playwright", () => {
     for (const name of people) {
         test(`Runing test for ${name}`, async ({ page }) => {
             await page.goto("http://zero.webappsecurity.com/index.html")
-            await page.type('#searchTerm', `${name}`)
+            await page.fill('#searchTerm', `${name}`)
         })
     }
 

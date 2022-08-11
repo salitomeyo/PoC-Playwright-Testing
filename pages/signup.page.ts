@@ -18,10 +18,10 @@ export class SignUpPage {
     }
 
     async fillSignUpForm(email: string, password: string, name: string, job: string) {
-        await this.emailInput.type(email)
-        await this.passwordInput.type(password)
-        await this.nameInput.type(name)
-        await this.jobInput.type(job)
+        await this.emailInput.fill(email)
+        await this.passwordInput.fill(password)
+        await this.nameInput.fill(name)
+        await this.jobInput.fill(job)
         await this.submitBtn.click()
     }
 }
